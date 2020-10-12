@@ -7,8 +7,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -347,7 +347,7 @@ public class MainActivity extends AppCompatActivity {
     private void ShowSnackbar(String value) {
         Snackbar snackbar = Snackbar.make(findViewById(R.id.lay), value, Snackbar.LENGTH_LONG);
 
-        TextView view1 = (TextView) snackbar.getView().findViewById(android.support.design.R.id.snackbar_text);
+        TextView view1 = (TextView) snackbar.getView().findViewById(R.id.snackbar_text);
         view1.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
         snackbar.show();

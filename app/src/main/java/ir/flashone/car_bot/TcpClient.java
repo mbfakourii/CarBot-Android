@@ -1,7 +1,7 @@
 package ir.flashone.car_bot;
 
 import android.app.Activity;
-import android.support.design.widget.Snackbar;
+import com.google.android.material.snackbar.Snackbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -138,7 +138,7 @@ public class TcpClient {
     private void ShowSnackbar(String value) {
         Snackbar snackbar = Snackbar.make(activity.findViewById(R.id.lay), value, Snackbar.LENGTH_LONG);
 
-        TextView view1 = (TextView) snackbar.getView().findViewById(android.support.design.R.id.snackbar_text);
+        TextView view1 = (TextView) snackbar.getView().findViewById(R.id.snackbar_text);
         view1.setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
 
         snackbar.show();
