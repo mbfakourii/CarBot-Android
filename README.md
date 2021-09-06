@@ -1,4 +1,4 @@
-# Thermometer-Android
+# CarBot-Android
 Car robot with socket to Android with WeMos or NodeMCU
 </br>
 the language of this program is Persian.
